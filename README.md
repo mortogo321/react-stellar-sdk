@@ -1,29 +1,45 @@
 # React Stellar SDK
 
-The Stellar SDK demo via React.  
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Create React App scaffold set up for building a Stellar network demo client, showing a standard CRA + Bootstrap project structure with the Stellar SDK wired in as a dependency.
 
-## Available Scripts
+## What's inside
 
-In the project directory, you can run:
+- Create React App project structure (`react-scripts` build/dev/test tooling)
+- Bootstrap and Reactstrap for UI components, Sass for custom styling, Font Awesome for icons
+- `stellar-sdk` included as a dependency for interacting with the Stellar network
+- A minimal `App` / `Demo` component pair as the starting point for the demo UI
 
-### `yarn start`
+## Tech stack
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- Create React App (react-scripts)
+- Bootstrap / Reactstrap
+- Sass
+- Font Awesome
+- Stellar SDK
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Quickstart
 
-### `yarn test`
+```bash
+yarn install
+yarn start
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Opens the app in development mode at [http://localhost:3000](http://localhost:3000).
 
-### `yarn build`
+Other available scripts:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn test   # run the test runner in watch mode
+yarn build  # build a production bundle to the build/ folder
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Project structure
+
+```
+src/
+  App.js     # top-level app shell
+  Demo.js    # demo view (starting point for Stellar SDK integration)
+  assets/scss/  # custom Sass styles
+public/        # static assets and HTML template
+```
